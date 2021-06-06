@@ -1,0 +1,137 @@
+/* @media (max-width: 1440px) {} */
+/* @media (max-width: 1366px) {} */
+/* @media (max-width: 1320px) {} */
+/* @media (max-width: 1290px) {} */
+/* @media (max-width: 1140px) {} */
+@media (max-width: 1024px) {
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pricing__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .secrvices__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav__list {
+        display: none;
+    }
+    .nav__btn{
+        display: none;
+    } 
+    .nav__menu {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        transition: 500ms;
+    }
+    .nav__line{
+        width: 100%;
+        height: 2px;
+        position: relative;
+        background: #5454D4;
+        transition: 500ms;
+    }
+    .nav__line::after,
+    .nav__line::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -10px;
+        background: #eb0f0f;
+    }
+    .nav__line::before{
+        top: 10px;
+        background: rgb(70, 248, 16);
+    }
+    .nav__menu:hover .nav__line{
+        transform: rotate(360deg);
+        background: transparent;
+    }
+    .nav__menu:hover .nav__line::after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .nav__menu:hover .nav__line::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .index__container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .index__desc{
+        margin-left: unset;
+    }
+    .metrics__container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .metrics__desc{
+        margin-right: unset;
+    }
+    .pricing__container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .pricing__btn-desc{
+        margin-top: 30px;
+    }
+}
+
+/* @media (max-width: 768px) {} */
+/* @media (max-width: 736px) {} */
+/* @media (max-width: 734px) {} */
+@media (max-width: 684px) {
+    .logos__container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+/* @media (max-width: 667px) {} */
+@media (max-width: 576px) {
+    .header__banner {
+        width: 300px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 414px) {
+    .header__content-title{
+        font-size: 55px;
+    }
+}
+/* @media (max-width: 412px) {} */
+@media (max-width: 375px) {
+    .index__img{
+        width: 300px;
+    }
+    .metrics__img{
+        width: 300px;
+    }
+}
+/* @media (max-width: 360px) {} */
+@media (max-width: 320px) {
+    .pricing__btn{
+        width: 145px;
+    }
+    .pricing__btn2{
+        width: 145px;
+    }
+    .pricing__card-btn{
+        width: 265px;
+    }
+}
